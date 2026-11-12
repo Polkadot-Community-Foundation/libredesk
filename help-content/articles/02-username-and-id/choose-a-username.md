@@ -44,7 +44,7 @@ Claiming a username is free. Your phone goes through device verification first. 
 
 ## If you restored an account without a username
 
-If you restore an account that doesn't have a username yet, you'll see "Account restored" and "Claim a username", just follow the same steps.
+If you restore an account that doesn't have a username yet, you'll see "Account restored" and "Claim a username". Follow the same steps.
 
 ## Related
 

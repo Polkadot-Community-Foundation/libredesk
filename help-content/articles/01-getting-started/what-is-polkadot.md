@@ -25,7 +25,7 @@ Polkadot is a free app for private messages, voice and video calls, and ᴄᴀ�
 
 ## How it works
 
-Your account lives on your phone, and only you hold the access. Unlike traditional chat apps and payment services you've likely used before there is no company or entity which holds access to your chat, data or money.  For the first time - you are not the product.   
+Your account lives on your phone, and only you hold the access. Unlike traditional chat apps and payment services you've likely used before, there is no company or entity that holds access to your chats, data or money. For the first time, you are not the product.   
 
 The app creates your account when you choose your username. It also creates a recovery phrase, which can bring your account back on another phone.
 

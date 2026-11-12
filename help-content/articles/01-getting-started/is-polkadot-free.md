@@ -42,18 +42,18 @@ The only fees are for adding ᴄᴀꜱʜ and cashing out, and the app shows them
 
 ## The free tier
 
-After you download the app and pick a username you receive a generous free allowance. This covers your messages, your username and the ᴄᴀꜱʜ you send. If you reach the allowance, the app will alert you, most users typically won't ever hit this limit. 
+After you download the app and pick a username, you receive a generous free allowance. This covers your messages, your username and the ᴄᴀꜱʜ you send. If you reach the allowance, the app will alert you. Most users won't ever hit this limit. 
 
 ## Fees for adding ᴄᴀꜱʜ and cashing out
 
-Adding ᴄᴀꜱʜ or cashing out uses 3rd party companies to facilitate the purchase, these companies typically charge a small fee. The fee differs depending on how you are adding / cashing out and what method you are using (crypto/card/bank). 
+Adding ᴄᴀꜱʜ or cashing out uses third-party companies to facilitate the purchase, and these companies typically charge a small fee. The fee depends on whether you are adding ᴄᴀꜱʜ or cashing out, and on which method you use (crypto, card or bank). 
 
 The app always lists the fee for your confirmation as part of the flow.
 
-See [Fees and limits for Get and Send to yourself](../05-get-and-send-to-yourself/get-and-send-fees-limits.md).
+See [Fees and limits](../05-get-and-send-to-yourself/get-and-send-fees-limits.md).
 
 ## Related
 
-- [ᴄᴀꜱʜ fees](../04-cash-and-payments/cash-fees.md)
+- [What are the ᴄᴀꜱʜ fees?](../04-cash-and-payments/cash-fees.md)
 - [What is device verification?](../02-username-and-id/device-verification.md)
-- [Ways to get ᴄᴀꜱʜ](../05-get-and-send-to-yourself/ways-to-get-cash.md)
+- [How to get ᴄᴀꜱʜ](../05-get-and-send-to-yourself/ways-to-get-cash.md)

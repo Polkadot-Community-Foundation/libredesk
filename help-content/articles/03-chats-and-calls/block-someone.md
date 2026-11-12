@@ -8,7 +8,7 @@ sort_order: 70
 excerpt: >-
   Open the chat, tap ⋮ at the top right, then tap Block user. They can't send you message requests or call you until you unblock them.
 keywords: [block, unblock, stop messages, harassment, spam, blocked contacts, ignore someone, report user]
-related: [message-requests, leave-a-chat, been-scammed, delete-a-message]
+related: [message-requests, leave-a-chat, delete-a-message]
 flags: []
 status: draft
 last_checked: 2026-11-03
@@ -39,4 +39,3 @@ You can unblock someone from their chat or from Settings:
 
 - [How message requests work](message-requests.md)
 - [Leave a chat](leave-a-chat.md)
-- [I think I've been scammed](../07-safety-and-scams/been-scammed.md)
