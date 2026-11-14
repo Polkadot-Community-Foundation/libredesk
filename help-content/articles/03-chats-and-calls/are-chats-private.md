@@ -20,7 +20,7 @@ Every message is end-to-end encrypted, so only you and the person you're talking
 
 - Messages are end-to-end encrypted on your phone before they're sent. They're delivered over Polkadot's public network, rather than a company server.
 - Photos and videos are encrypted on your phone, and only the encrypted file is uploaded for delivery.
-- Voice and video calls are encrypted and peer-to-peer. A service run by the Polkadot Community Foundation helps users to connect, but doesn't have any logging or analyitcs enabled.  
+- Voice and video calls are encrypted and peer-to-peer. A service run by the Polkadot Community Foundation helps users to connect, but doesn't have any logging or analytics enabled.  
 - You don't need a phone number or email. People find you by your username.
 - Strangers can send you one message request, and nothing more until you accept. See [How message requests work](message-requests.md).
 

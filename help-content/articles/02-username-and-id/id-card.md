@@ -50,4 +50,4 @@ They'll get your QR code and an invite message with a link to download Polkadot.
 
 - [Invite friends to Polkadot](invite-friends.md)
 - [Start a chat](../03-chats-and-calls/start-a-chat.md)
-- [Receive ᴄᴀꜱʜ](../04-cash-and-payments/receive-cash.md)
+- [How to receive ᴄᴀꜱʜ](../04-cash-and-payments/receive-cash.md)

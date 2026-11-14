@@ -14,7 +14,7 @@ status: draft
 last_checked: 2026-11-03
 ---
 
-To set up Polkadot, install the app, pick a theme and choose a username, unlike most other chat apps, you don't need a phone number, email or password.
+To set up Polkadot, install the app, pick a theme and choose a username. Unlike most other chat apps, you don't need a phone number, email or password.
 
 If you've used Polkadot before, restore your account instead of making a new one: tap **Recover here** on the username screen. 
 See [Restore your account on a new phone](../06-backup-and-recovery/restore-your-account.md).
@@ -37,7 +37,7 @@ Continuing from the username screen means you agree to the Terms and Privacy Pol
 
 - The app creates your account and its recovery phrase on your phone.
 - The app checks that your phone is genuine. This device verification doesn't ask for documents, and it's what gives every account free usage. If it doesn't go through, see ["We couldn't verify this device"](../02-username-and-id/device-cant-be-verified.md).
-- On the Google Play version, if you skip Google sign-in or the backup doesn't work, your account is still created and you can back it up later. See [Back up to Google Drive](../06-backup-and-recovery/back-up-to-google-drive.md).
+- On the Google Play version, if you skip Google sign-in or the backup doesn't work, your account is still created and you can back it up later. See [Backing up your Polkadot app with Google Drive](../06-backup-and-recovery/back-up-to-google-drive.md).
 - On the direct download version, there's no Google Drive backup, so write down your recovery phrase. See [Back up without Google Drive](../06-backup-and-recovery/back-up-without-google-drive.md).
 
 If the app shows "Waiting for network connection…", check your internet connection. See ["Waiting for network connection…" or "No connection"](../09-troubleshooting/no-connection.md).
@@ -46,5 +46,5 @@ If the app shows "Waiting for network connection…", check your internet connec
 
 - [Choose your username](../02-username-and-id/choose-a-username.md)
 - [Find your way around the app](find-your-way-around.md)
-- [Back up to Google Drive](../06-backup-and-recovery/back-up-to-google-drive.md)
+- [Backing up your Polkadot app with Google Drive](../06-backup-and-recovery/back-up-to-google-drive.md)
 - [Restore your account on a new phone](../06-backup-and-recovery/restore-your-account.md)

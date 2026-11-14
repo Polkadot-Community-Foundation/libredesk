@@ -14,12 +14,12 @@ status: draft
 last_checked: 2026-11-03
 ---
 
-Device verification is a quick, automatic check that your phone is genuine and hasn't been modified, in most cases you won't even see it. 
-This is an anti spam measure and doesn't require you to submit any documents, phone number or an email, it's just checking that your device is unique and hasn't already registered with Polkadot before. This is in place of normal email or SMS verification that other services use.
+Device verification is a quick, automatic check that your phone is genuine and hasn't been modified. In most cases you won't even see it. 
+This is an anti-spam measure and doesn't require you to submit any documents, a phone number or an email. It only checks that your device is unique and hasn't already been registered with Polkadot. This is in place of the email or SMS verification that other services use.
 
 ## Why the app checks your phone
 
-Device verification is what lets Polkadot give every account free usage. Each verified phone gets a generous free allowance, so there are no fees for messages, usernames or sending ᴄᴀꜱʜ. It's unlikely that you'll reach the allowance, but if you do the app will alert you.  
+Device verification is what lets Polkadot give every account free usage. Each verified phone gets a generous free allowance, so there are no fees for messages, usernames or sending ᴄᴀꜱʜ. It's unlikely that you'll reach the allowance, but if you do, the app will alert you.  
 
 ## How it works
 

@@ -50,5 +50,5 @@ If you see "Couldn't start a chat with this user. Ask them to open the app to fi
 
 - [How message requests work](message-requests.md)
 - [Use your ID card](../02-username-and-id/id-card.md)
-- [Send ᴄᴀꜱʜ](../04-cash-and-payments/send-cash.md)
+- [How to send ᴄᴀꜱʜ](../04-cash-and-payments/send-cash.md)
 - [Block or unblock someone](block-someone.md)

@@ -25,7 +25,7 @@ Polkadot works on Android phones running Android 10 or later with a locked bootl
 | Other custom ROMs | No | |
 | Emulators | No | |
 
-Polkadot is available for Android phones, in English, more languages coming soon. 
+Polkadot is available for Android phones, in English. 
 
 ## Why some phones can't use it
 

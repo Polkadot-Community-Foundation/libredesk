@@ -42,7 +42,7 @@ Your conversations live here. When someone new writes to you, a "New requests" r
 Your Pocket holds your ᴄᴀꜱʜ purse and your ID card.
 
 - [Your Pocket and ᴄᴀꜱʜ purse](../04-cash-and-payments/pocket-and-purse.md)
-- [Send ᴄᴀꜱʜ](../04-cash-and-payments/send-cash.md)
+- [How to send ᴄᴀꜱʜ](../04-cash-and-payments/send-cash.md)
 - [Use your ID card](../02-username-and-id/id-card.md)
 
 ## The scan button
@@ -55,7 +55,7 @@ Tap the scan button to open the camera and scan someone's QR code, to add them o
 
 A dot on the Settings icon means your account isn't backed up yet. Your app version is at the bottom of the Settings screen.
 
-- [Back up to Google Drive](../06-backup-and-recovery/back-up-to-google-drive.md)
+- [Backing up your Polkadot app with Google Drive](../06-backup-and-recovery/back-up-to-google-drive.md)
 - [Change your theme](../08-settings-and-account/change-theme.md)
 - [Choose a ᴄᴀꜱʜ Privacy Mode](../04-cash-and-payments/privacy-mode.md)
 - [Contact support](../09-troubleshooting/contact-support.md)

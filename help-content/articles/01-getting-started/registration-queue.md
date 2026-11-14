@@ -19,7 +19,7 @@ New accounts wait in a short queue, which protects the service from bots and fak
 ## What to do
 
 1. Look under "Your position" to see your place in the queue.
-2. Wait for your turn. When it comes, you don't need to do anything, the Polkadot app will continue setting everything up for you :) 
+2. Wait for your turn. When it comes, you don't need to do anything. The Polkadot app will continue setting everything up for you. 
 
 
 ## Related
