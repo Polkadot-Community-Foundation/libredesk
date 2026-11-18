@@ -782,11 +782,11 @@ func (c *Manager) GetConversations(viewingUserID, userID int, teamIDs []int, lis
 	tx, err := c.db.BeginTxx(context.Background(), &sql.TxOptions{
 		ReadOnly: true,
 	})
-	defer tx.Rollback()
 	if err != nil {
 		c.lo.Error("error preparing get conversations query", "error", err)
 		return conversations, envelope.NewError(envelope.GeneralError, c.i18n.T("globals.messages.somethingWentWrong"), nil)
 	}
+	defer tx.Rollback()
 
 	if err := tx.Select(&conversations, query, qArgs...); err != nil {
 		c.lo.Error("error fetching conversations", "error", err)

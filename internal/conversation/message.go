@@ -1868,11 +1868,11 @@ func (m *Manager) getConversationMessages(conversationUUID string, page, pageSiz
 	tx, err := m.db.BeginTxx(context.Background(), &sql.TxOptions{
 		ReadOnly: true,
 	})
-	defer tx.Rollback()
 	if err != nil {
 		m.lo.Error("error preparing get messages query", "error", err)
 		return messages, pageSize, envelope.NewError(envelope.GeneralError, m.i18n.T("globals.messages.somethingWentWrong"), nil)
 	}
+	defer tx.Rollback()
 
 	if err := tx.Select(&messages, query, qArgs...); err != nil {
 		m.lo.Error("error fetching conversations", "error", err)

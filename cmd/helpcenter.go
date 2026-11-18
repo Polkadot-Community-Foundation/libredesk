@@ -2230,7 +2230,7 @@ func renderHelpCenterCollectionPreview(r *fastglue.Request, helpCenter hcmodels.
 		"L": i18n,
 		"Data": map[string]interface{}{
 			"Title":            fmt.Sprintf("%s - %s", collection.Name, helpCenter.Name),
-			"HelpCenter":       helpCenterTemplateData(app, r, helpCenter, locale),
+			"HelpCenter":       helpCenterPreviewData(app, r, helpCenter, locale),
 			"Collection":       collection,
 			"Tree":             sidebarTree(app, helpCenter, locale),
 			"ActiveCollection": collection.Slug,
