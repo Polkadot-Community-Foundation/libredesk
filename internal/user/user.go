@@ -2,6 +2,7 @@
 package user
 
 import (
+	"cmp"
 	"context"
 	"crypto/sha256"
 	"crypto/subtle"
@@ -84,6 +85,7 @@ type queries struct {
 	GetUserIDsByRole                 *sqlx.Stmt `query:"get-user-ids-by-role"`
 	GetUserByExternalID              *sqlx.Stmt `query:"get-user-by-external-id"`
 	GetUsersCompact                  string     `query:"get-users-compact"`
+	GetUsersPageBase                 string     `query:"get-users-page-base"`
 	GetAgentsCompact                 *sqlx.Stmt `query:"get-agents-compact"`
 	GetAgentsCompactByIDs            *sqlx.Stmt `query:"get-agents-compact-by-ids"`
 	UpdateContact                    *sqlx.Stmt `query:"update-contact"`
@@ -95,6 +97,7 @@ type queries struct {
 	UpdateAvailability               *sqlx.Stmt `query:"update-availability"`
 	UpdateLastActiveAt               *sqlx.Stmt `query:"update-last-active-at"`
 	UpdateInactiveOffline            *sqlx.Stmt `query:"update-inactive-offline"`
+	SetAgentOffline                  *sqlx.Stmt `query:"set-agent-offline"`
 	GetAvailabilityStatus            *sqlx.Stmt `query:"get-availability-status"`
 	UpdateLastLoginAt                *sqlx.Stmt `query:"update-last-login-at"`
 	SoftDeleteAgent                  *sqlx.Stmt `query:"soft-delete-agent"`
@@ -626,18 +629,19 @@ func updateSystemUserPassword(db *sqlx.DB, hashedPassword []byte) (int, error) {
 }
 
 // makeUserListQuery generates a query to fetch users based on the provided filters.
-func (u *Manager) makeUserListQuery(page, pageSize int, userTypes []string, order, orderBy, filtersJSON, location string) (string, []interface{}, error) {
-	var qArgs []any
-	qArgs = append(qArgs, pq.Array(userTypes))
-	return dbutil.BuildPaginatedQuery(u.q.GetUsersCompact, qArgs, dbutil.PaginationOptions{
+func (u *Manager) makeUserListQuery(page, pageSize int, userTypes []string, order, orderBy, filtersJSON, location string) (string, []any, error) {
+	pageBase := fmt.Sprintf(u.q.GetUsersPageBase, cmp.Or(orderBy, "NULL"))
+	return dbutil.BuildCountedPaginatedQuery(u.q.GetUsersCompact, pageBase, []any{pq.Array(userTypes)}, dbutil.PaginationOptions{
 		Order:    order,
 		OrderBy:  orderBy,
 		Page:     page,
 		PageSize: pageSize,
 		Location: location,
 	}, filtersJSON, dbutil.AllowedFields{
-		"users": {"email", "created_at", "updated_at"},
-	}, nil)
+		"users": {"email", "phone_number", "created_at", "updated_at"},
+	}, dbutil.FieldRenderers{
+		"users": {"full_name": renderUserFullNameFilter},
+	})
 }
 
 // verifyPassword compares the provided password with the stored password hash.
@@ -678,4 +682,14 @@ func (u *Manager) reserveFlush(id int) bool {
 func hashAPISecret(secret string) string {
 	sum := sha256.Sum256([]byte(secret))
 	return hex.EncodeToString(sum[:])
+}
+
+func renderUserFullNameFilter(operator, value string, paramIndex int) (string, []any, error) {
+	switch operator {
+	case "contains", "ilike":
+		query := fmt.Sprintf("(users.first_name || ' ' || COALESCE(users.last_name, '')) ILIKE $%d ESCAPE '\\'", paramIndex)
+		return query, []any{dbutil.ContainsPattern(value)}, nil
+	default:
+		return "", nil, fmt.Errorf("invalid operator for full name: %s", operator)
+	}
 }
